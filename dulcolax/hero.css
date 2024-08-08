@@ -1,0 +1,44 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poop {
+    width: 40px;
+}
+
+.top-text,
+.bottom-text {
+    color: white; 
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 390px;
+}
+
+.bottom-text p {
+    margin-top: 10%;
+    font-family: "royale-45", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.top-text {
+    margin-top: 5px;
+}
+
+.top-text h1,
+.top-text h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.top-text h2 {
+    margin-top: 0px;
+}
+
+
+.bottom-text {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,86 @@
+.container-book {
+    background-image: url('C:/projetos/Dulcolax/assets/o_livro.png'); 
+    height: 100vh;
+    padding: 15px; 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.book-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.poop {
+    width: 40px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    z-index: 1;
+}
+
+.book-text p {
+    color: #fff;
+    width: 90%;
+    max-width: 787px;
+    font-size: 14px;
+    padding: 5px;
+    line-height: 1.5;
+    margin-bottom: 10%;
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 1;
+}
+
+.custom-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 15px 25px;
+    font-size: 14px;
+    color:#fff;
+    font-family: "Montaga", serif;
+    cursor: pointer;
+    margin-top: 70%;
+    
+}
+
+.custom-button:hover {
+    border: 1px solid #6BAA59;
+    color: #6BAA59;
+    text-shadow: 0 0 10px #46f600;
+}
+
+.retangle-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.retangle-top, .retangle-bottom {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 728px) {
+    .book-text {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: static;
+        text-align: center;
+    }
+
+    
+    .custom-button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

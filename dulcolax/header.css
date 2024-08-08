@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(180deg, #000000 -16.59%, rgba(255, 235, 13, 0) 100%);
+    width: 100%;
+    padding: 20px 0;
+
+}
+
+.container_header {
+    max-width: 100vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.container_header_lengsocial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0;
+
+}
+
+
+.logo img {
+    width: 114px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.menu nav a {
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-item:hover {
+    text-shadow: 0 0 10px #46f600;
+    color: #6BAA59;
+}
+
+.menu-item.active {
+    text-shadow: 0 0 10px rgb(219, 180, 51);
+}
+
+.menu-item.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0px;
+    width: 100%;
+    height: 12px;
+    background-image: url('C:/projetos/Dulcolax/assets/line.png');
+    background-size: auto 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.social a {
+    margin: 0 0px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.social a img {
+    width: 30px;
+    height: auto;
+}
+
+.linguagem {
+    position: relative;
+    display: flex;
+    font-size: small;
+}
+
+.linguagem a {
+    position: relative;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.linguagem a:hover {
+    color: #6BAA59;
+    text-shadow: 0 0 10px #46f600;
+}
+
+.linguagem a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -12px; /* Ajuste para posicionar o retângulo abaixo do link */
+    width: 100%;
+    height: 12px;
+    background-image: url('C:/projetos/Dulcolax/assets/retangle.png');
+    background-size: auto 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mobile {
+    display: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.mobile i {
+    color: #fff;
+}
+
+.mobile .fa-times {
+    display: none;
+}
+
+.mobile img {
+    display: none;
+}
+
+.separator-menu{
+    display: none;
+}
+
+@media (max-width: 812px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 568px;
+        position: absolute;
+        background-color: #012A20;
+        top: 0;
+        text-align: left;
+    }
+
+    .menu nav a {
+        display: block;
+        margin-left: 14%;
+    }
+
+    .mobile {
+        display: block;
+        position: relative;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+
+    .toggle .fa-bars {
+        display: none;
+    }
+
+    .toggle .fa-times {
+        display: block;
+    }
+
+    .container_header_lengsocial {
+        justify-content: space-evenly;
+        padding: 5%;
+    }
+
+    .menu-item {
+        margin: 3% ;
+        display: flex;
+    }
+
+    .menu-item.active::after {
+    display: none;
+    }
+
+    .linguagem{
+        margin-right: 5%;
+    }
+
+    .separator-menu{
+        display: block;
+        width: 70%;
+        height: 1px;
+        background-color: #fff;
+        opacity: 0.2;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .nav-item {
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+}
