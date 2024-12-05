@@ -1,0 +1,268 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background-image: url('C:/projetos/Dulcolax/assets/img_back_header.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Cobre toda a área visível */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos na vertical */
+    z-index: 1;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-text img {
+    width: 40px;
+}
+
+.top-text,
+.bottom-text {
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 5px; /* Espaçamento ao redor do texto */
+    margin-bottom: 390px;
+}
+
+.bottom-text p {
+    margin-top: 25%;
+}
+
+.top-text {
+    margin-top: 5px; /* Margem no topo para o texto superior */
+}
+
+
+.top-text h1,
+.top-text h2 {
+    font-family: "royale-45", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.top-text h2 {
+    margin-top: 0px; /* Ajuste a margem superior conforme necessário */
+}
+
+
+.bottom-text {
+    margin-bottom: 5px; /* Margem na parte inferior para o texto inferior */
+}
+
+.container-about {
+    background-color: #012A20;
+    margin-top: 5%;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+
+.about-text img {
+    width: 40px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.about-text p {
+    color: #fff;
+    width: 90%;
+    max-width: 787px;
+    font-size: 14px;
+    padding: 5px;
+    line-height: 1.5;
+    margin-bottom: 10%;
+
+}
+
+ h2, h3 {
+    color: #fff;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-item {
+    min-width: 20%;
+    transition: filter 0.5s ease;
+}
+
+.carrossel-item:nth-child(1) {
+    filter: blur(5px) brightness(50%);
+}
+
+.carrossel-item:nth-child(2) {
+    filter: blur(3px) brightness(60%);
+}
+
+.carrossel-item:nth-child(3) {
+    filter: none;
+    width: 60%;
+}
+
+.carrossel-item:nth-child(4) {
+    filter: blur(3px) brightness(60%);
+}
+
+.carrossel-item:nth-child(5) {
+    filter: blur(5px) brightness(50%);
+}
+
+.carrossel-prev, .carrossel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carrossel-prev {
+    left: 20px;
+}
+
+.carrossel-next {
+    right: 20px;
+}
+
+.carrossel-prev img, .carrossel-next img {
+    width: 50px;
+    height: auto;
+}
+
+.first-letter {
+    font-size: 35px;
+}
+
+.container-book {
+    background-image: url('C:/projetos/Dulcolax/assets/o_livro.png'); 
+    height: 100vh;
+    padding: 20px; 
+    margin-top: 10%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+.container-create {
+    background-image: url('C:/projetos/Dulcolax/assets/princesa-celular.png'); 
+    height: 100vh;
+    padding: 20px; 
+    margin-top: 10%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens ao final da linha (à direita) */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+
+}
+
+.book-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+
+.book-text img {
+    width: 40px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.book-text p {
+    color: #fff;
+    width: 90%;
+    max-width: 787px;
+    font-size: 14px;
+    padding: 5px;
+    line-height: 1.5;
+    margin-bottom: 10%;
+}
+
+.create-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.create-text img {
+    width: 40px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.create-text p {
+    color: #fff;
+    width: 45%;
+    max-width: 787px;
+    font-size: 14px;
+    padding: 5px;
+    line-height: 1.5;
+    margin-bottom: 10%;
+}
+
+.qr-code {
+    display: flex;
+    flex-direction: column;
+}
+
+.qr-code img {
+    width: 123px;
+}
+
+footer {
+    background-color: #012A20;
+    padding: 20px;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-section span {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin: 20px 0;
+}
